@@ -1,0 +1,225 @@
+
+
+
+
+.acme-regular {
+  font-family: "Acme",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+
+}
+
+.texto_animado {
+  color: #ff69b4; /* Cambia el color del texto a rosa */
+  animation: move-text 2s infinite; /* Agrega un efecto de movimiento */
+}
+
+@keyframes move-text {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.bg-gray {
+    background-color: #808080;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: url("Images/flecha.png");
+  background-size: 100% 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-item {
+  width: 400px;
+  transition: width 2ms;
+}
+
+
+
+.carousel-control-next-icon {
+  transform: rotate(180deg);
+}
+.whatsapp-icon {
+  position: fixed;
+  bottom: 80px; /* adjust this value to move the icon higher */
+  right: 20px;
+  z-index: 1000;
+}
+.whatsapp-icon a:hover {
+    animation: jump 1s ease-in-out;
+  }
+  
+
+  /*Estilos generales del boton whatsapp*/
+.whatsapp-btn {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  animation: breathe 2s ease-in-out infinite;
+}
+
+/*Estilos solo al icono whatsapp*/
+.whatsapp-btn i {
+  color: #fff;
+  font-size: 24px;
+  animation: beat 2s ease-in-out infinite;
+  text-decoration: none;
+}
+
+ /*Estilos de animacion del icono latiendo*/
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  
+.whatsapp-icon img {
+    border-radius: 50%;
+}
+
+.aside { grid-area: aside;
+}
+
+.aside {display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.preguntas { grid-area: preguntas;
+      max-height: 100%vp;
+      font-family: "comic",cursive;
+      font-weight: 200;
+      font-style: normal;}
+
+.grid-container {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'aside preguntas';
+    
+    
+  gap: 1px;
+  background-color: #abd1f1;
+  padding: 0px;
+}
+
+.mapa {grid-area: mapa;
+display: flex;
+justify-content: center;
+background-color: #abd1f1;
+}
+.direccion {grid-area: direccion;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.ubicacion {display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 6fr 1fr;
+grid-template-areas:
+'mapa'
+'direccion';
+}
+
+.formaside {grid-area: formaside;
+  background-color: #abd1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form1 {grid-area: form1; 
+  display:flex;
+  justify-content: center;
+  background-color: #abd1f1;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  background-color: #abd1f1;
+}
+
+
+.image-grid img:hover {
+  opacity: 0.5;
+  filter: brightness(0.5);
+  transform: scale(1.1);
+}
+
+.image-grid img {
+  border: 1px solid #640404;
+  transition: all 0.3s ease;
+}
+
+.image-grid img:hover {
+  opacity: 0.5;
+  filter: brightness(0.5);
+  transform: scale(1.1);
+}
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+#scroll-to-top img {
+  width: 30px;
+  height: 30px;
+}
+
+#scroll-to-top:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: bottom;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer a {
+  font-size: 1.2rem;
+}
