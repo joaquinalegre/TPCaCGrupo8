@@ -209,5 +209,8 @@ grid-template-areas:
   font-size: 1.2rem;
 }
 
-
+@media (max-width: 768px) {
+  .aside, .preguntas {
+      padding: 10px;
+  }
 
