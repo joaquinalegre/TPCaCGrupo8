@@ -27,7 +27,7 @@
 
 .whatsapp-icon {
   position: fixed;
-  bottom: 80px; /* adjust this value to move the icon higher */
+  bottom: 100px; /
   right: 20px;
   z-index: 1000;
 }
