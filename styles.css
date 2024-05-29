@@ -31,24 +31,7 @@
 .bg-gray {
     background-color: #808080;
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-image: url("Images/flecha.png");
-  background-size: 100% 100%;
-  width: 30px;
-  height: 30px;
-}
 
-.carousel-item {
-  width: 400px;
-  transition: width 2ms;
-}
-
-
-
-.carousel-control-next-icon {
-  transform: rotate(180deg);
-}
 .whatsapp-icon {
   position: fixed;
   bottom: 80px; /* adjust this value to move the icon higher */
@@ -223,3 +206,5 @@ grid-template-areas:
 .footer a {
   font-size: 1.2rem;
 }
+
+
