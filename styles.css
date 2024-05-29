@@ -25,6 +25,12 @@
   background-color: #808080;
 }
 
+.nav-link {
+  font-family: "acme", sans-serif; /* Cambia "NombreDeLaFuente" por la fuente que desees */
+  font-size: 30px; /* Cambia el tamaño de la fuente según lo necesites */
+}
+
+
 .whatsapp-icon {
   position: fixed;
   bottom: 100px; /
