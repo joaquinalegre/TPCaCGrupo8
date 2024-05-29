@@ -1,13 +1,7 @@
-
-
-
-
 .acme-regular {
-  font-family: "Acme",sans-serif;
+  font-family: "Acme", sans-serif;
   font-weight: 400;
   font-style: normal;
- 
-
 }
 
 .texto_animado {
@@ -27,9 +21,8 @@
   }
 }
 
-
 .bg-gray {
-    background-color: #808080;
+  background-color: #808080;
 }
 
 .whatsapp-icon {
@@ -38,12 +31,12 @@
   right: 20px;
   z-index: 1000;
 }
-.whatsapp-icon a:hover {
-    animation: jump 1s ease-in-out;
-  }
-  
 
-  /*Estilos generales del boton whatsapp*/
+.whatsapp-icon a:hover {
+  animation: jump 1s ease-in-out;
+}
+
+/* Estilos generales del boton whatsapp */
 .whatsapp-btn {
   position: fixed;
   bottom: 60px;
@@ -60,7 +53,7 @@
   animation: breathe 2s ease-in-out infinite;
 }
 
-/*Estilos solo al icono whatsapp*/
+/* Estilos solo al icono whatsapp */
 .whatsapp-btn i {
   color: #fff;
   font-size: 24px;
@@ -68,7 +61,7 @@
   text-decoration: none;
 }
 
- /*Estilos de animacion del icono latiendo*/
+/* Estilos de animacion del icono latiendo */
 @keyframes beat {
   0% {
     transform: scale(1);
@@ -80,28 +73,27 @@
     transform: scale(1);
   }
 }
-  
+
 .whatsapp-icon img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
-.aside { grid-area: aside;
-}
-
-.aside {display: flex;
+.aside {
+  grid-area: aside;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
-.preguntas { grid-area: preguntas;
-      max-height: 100%vp;
-      font-family: "comic",cursive;
-      font-weight: 200;
-      font-style: normal;
-      overflow: auto;   
-    }
+.preguntas {
+  grid-area: preguntas;
+  max-height: 100vh;
+  font-family: "comic", cursive;
+  font-weight: 200;
+  font-style: normal;
+  overflow: auto;
+}
 
 .grid-container {
   margin-top: 5px;
@@ -109,42 +101,44 @@
   display: grid;
   grid-template-columns: 2fr 6fr;
   grid-template-rows: auto;
-  grid-template-areas:
-    'aside preguntas';
-    
-    
+  grid-template-areas: 'aside preguntas';
   gap: 1px;
   background-color: #abd1f1;
   padding: 0px;
 }
 
-.mapa {grid-area: mapa;
-display: flex;
-justify-content: center;
-background-color: #abd1f1;
-}
-.direccion {grid-area: direccion;
-display: flex;
-justify-content: center;
-align-items: center;}
-
-.ubicacion {display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 6fr 1fr;
-grid-template-areas:
-'mapa'
-'direccion';
+.mapa {
+  grid-area: mapa;
+  display: flex;
+  justify-content: center;
+  background-color: #abd1f1;
 }
 
-.formaside {grid-area: formaside;
+.direccion {
+  grid-area: direccion;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ubicacion {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr 1fr;
+  grid-template-areas: 'mapa' 'direccion';
+}
+
+.formaside {
+  grid-area: formaside;
   background-color: #abd1f1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form1 {grid-area: form1; 
-  display:flex;
+.form1 {
+  grid-area: form1;
+  display: flex;
   justify-content: center;
   background-color: #abd1f1;
 }
@@ -155,13 +149,6 @@ grid-template-areas:
   align-items: flex-start;
   margin-bottom: 16px;
   background-color: #abd1f1;
-}
-
-
-.image-grid img:hover {
-  opacity: 0.5;
-  filter: brightness(0.5);
-  transform: scale(1.1);
 }
 
 .image-grid img {
@@ -211,6 +198,6 @@ grid-template-areas:
 
 @media (max-width: 768px) {
   .aside, .preguntas {
-      padding: 10px;
+    padding: 10px;
   }
-
+}
