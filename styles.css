@@ -95,7 +95,7 @@
 .preguntas {
   grid-area: preguntas;
   max-height: 100vh;
-  font-family: "comic", cursive;
+  font-family: "acme", cursive;
   font-weight: 200;
   font-style: normal;
   overflow: auto;
